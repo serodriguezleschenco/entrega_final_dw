@@ -1,0 +1,299 @@
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+/* Margen y fondo página */
+body {
+    background: linear-gradient(180deg, white 0%, #a3c1e6 100%);
+    padding: 50px 30px 30px 40px;
+    margin-left: 10px; 
+    @include sizes(100%, 95%);}
+ 
+header {
+    @include sizes(95%, 95%);
+ }
+
+/* Ancho máximo menú */  
+.navbar {
+    max-width: 95% !important;
+}
+
+/* Formateo h1 hasta h4 */
+h1 {
+    color: #578ebb;
+    text-align: center}
+
+/* Interpolaciones */
+@for $i from 2 through 3 {
+    h#{$i} {
+    color:black; 
+    text-align: center}  
+    }
+
+h4 {
+    border: 0.5px solid #777;
+    background-color: #52b3eb;
+    text-align: center; 
+    padding: 4px}
+
+/* Imagen Logo Empresa */
+.logo {
+    align-items: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block}
+
+.p-center{
+    text-align: center;
+}
+
+/* Centrar video */
+.video-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 800px;
+    height: auto; }
+
+/* Variables para imágenes destacadas */
+.img-dest {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 700px;
+    height: auto}
+
+/* Variables para imágen de usuario */
+.img-user {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 250px;
+    height: auto}
+
+/* Variables para imágen de contactos */
+.img-cont {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 450px;
+    height: auto}
+
+/* Estilo para sección licencia sitio */
+    .licencia {
+    text-align: center;
+    font-size: x-small}
+
+/* Resaltado de textos */
+.resaltadoDestacados {
+    color: #6b0778;
+    background-color: aliceblue;
+    font-style: italic;
+    font-weight: bold}
+
+.resaltadoDestacados2 {
+    color: #C70039;
+    background-color: beige;
+    font-style: italic;
+    font-weight: bold}
+
+.recetaResaltada {
+    color: #2a2de8;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center}
+
+.recetaClase1 {
+    padding: 20px;
+    border: solid 10px  #52b9d0;
+    margin: 100px}
+
+.recetaClase2 {
+    padding: 20px;
+    border: solid 10px  #7b9fa7;
+    margin: 100px}
+
+.product-center {
+    text-align: center;
+    font-weight: 600}
+
+#section-prod-dest {
+    color: #c92cb6;
+    font-size: x-large;
+    letter-spacing: 5px}
+
+/* Responsive Google Maps */
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;}
+    
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;}
+
+/* Carousel */
+#carousel {
+    @include sizes(100%, 95%);
+    position: relative}
+
+/* Gradientes */
+.product-grad {
+    background: linear-gradient(90deg, white 0%, #32d2d0 35%, #a4bcc1 90%);
+    border: 0.25px solid grey}
+
+.product-grad2 {
+    background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%)}
+
+.carousel-inner img {
+    display: block;
+    height: auto;
+    max-width: 95%}
+
+/* FLEX */
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid #777;
+    background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%)}
+
+.flex-dir-ppal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly}
+
+.flex-container2-recomendados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly}
+
+/* Animación cambio de fondo gradiente*/
+#danger {
+    color:black ;
+    font-size: x-large;
+    letter-spacing: 2px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    animation-name: danger;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s}
+
+@keyframes danger {
+0% {
+    background: radial-gradient(circle, #f9fe33 100%, #e6a3a3 100%); }
+25% {
+    background: radial-gradient(circle, #f9fe33 79%, #e6a3a3 100%); }
+50% {
+    background: radial-gradient(circle, #f9fe33 44%, #d71414 100%); }
+75% {
+    background: radial-gradient(circle, #f9fe33 33%, #d71414 100%); }
+100% {
+    background: radial-gradient(circle, #f9fe33 5%, #d71414 100%); } }
+
+/* Formateo de lista de envíos*/
+.lista {
+    list-style-position: inside;
+    list-style: none}
+
+/*footer c/ hoover*/
+    footer .F-Follow {
+    padding: 1rem; }
+    footer .F-Follow .F-Redes {
+    height: 4rem;
+    margin-bottom: 1rem; }
+    footer .F-Follow .F-Redes .col-1 {
+    width: fit-content;
+    padding: 0 !important; }
+    footer .F-Follow .F-Redes .col-1 a {
+    list-style: none;
+    margin: 0;
+    padding: 0 !important; }
+    footer .F-Follow .F-Redes .col-1 a img {
+    height: 2.5rem;
+    width: 2.5rem;
+    opacity: 70%;
+    padding: 0 !important; }
+    footer .F-Follow .F-Redes .col-1 a img:hover {
+    transition: .5s;
+    transform: scale(1.15);
+    opacity: 100%; }
+    footer .F-Follow .Seguinos {
+    width: fit-content; }
+    footer .F-Follow .Seguinos p {
+    text-align: center;
+    color: black; 
+    font-weight: bold; }
+
+/* Lista formas de envío y/o retiro*/
+.list-env > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center}
+
+/* Media queries -> Modificación tamaño fonts*/
+@media only screen and (min-width: 340px) {
+    h1 {
+        font-size: medium;
+        margin: 10px}
+    h2 {
+        font-size: 0.95rem}
+    h3 {
+        font-size: 0.85rem}
+    h4 {
+        font-size: 0.75rem}
+    p {
+        font-size: 0.70rem}
+    th {
+        font-size:x-small}
+    }
+
+@media only screen and (min-width: 720px) {
+    h1 {
+        font-size:x-large;
+        margin: 5px}
+    h2 {
+        font-size: 1.25rem}
+    h3 {
+        font-size: 1.15rem}
+    h4 {
+        font-size: 1.05rem}
+    p {
+        font-size: 1.00rem}
+    th {
+        font-size: medium}
+    }
+
+@media only screen and (min-width: 1020px) {
+    h1 {
+        font-size: xx-large;
+        margin: 0px}
+    h2 {
+        font-size: 1.45rem}
+    h3 {
+        font-size: 1.35rem}
+    h4 {
+        font-size: 1.25rem}
+    p {
+        font-size: 1.15rem}
+    th {
+        font-size: large}
+    }

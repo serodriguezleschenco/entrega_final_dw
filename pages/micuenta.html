@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap-->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Hoja de estilo CSS-->
+    <link rel="stylesheet" href="../css/main-scss.css">
+
+    <!--API Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+   
+    <!--Nombre de página que muestra navegador-->
+    <title>Mi Cuenta - Pescadería Pepes Bagre</title>
+
+    <!--Metas-->
+    <meta name="description" content="Encontrá las herramientas necesarias para gestionar tu cuenta, formas de pago, dirección de envío y más...">
+    <meta name="keywords" content="Pescaderia, Rosario, Pescados, Frescos, Mar, Mariscos, Pesca, Cocina, Envíos, Ofertas, Cheff, Recetas, Gestión, Cuenta, Pago, Dirección">
+</head>
+
+<body>
+  <header>
+    <h1>Pescadería Pepes Bagre</h1>
+    <div>
+        <img class="logo" src="../public/img/logo.png" alt="logo de la empresa">
+    </div>
+  </header>
+      
+  <div>  
+  <!--Menú presente en toda la página web-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destacados.html">Recetas Destacadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="envios.html">Envíos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactos.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="micuenta.html">Mi Cuenta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+        
+  <main>
+    <section class="flex-container">
+    <h2 class="product-grad">Gestioná tu cuenta</h2>
+
+    <p id="danger">Próximamente encontrarás las herramientas necesarias para gestionar tus datos personales, envíos, formas de pago, etc.</p>
+
+
+    <img class="img-user" src="../public/img/cuenta.png" alt="Logo usuario" width="100%">
+    
+    
+    <div class="container">
+      <!--Formulario para contacto y/o ingreso a sistema de usuario-->
+      <form action="#">
+        <div class="form-group">
+            <label for="email">Usuario:</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese Contraseña" name="password">
+        </div>
+      </form>
+
+      <!--Botón con animación-->
+      <p class="flex-container">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Ingresar
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <p>En desarrollo. Momentaneamente por consultas sobre pedidos, formas de pago, dirección de entrega, te solicitamos que te comuniques mediante Whatsapp o llamada telefónica.</p>
+          <p>Desde ya, muchas gracias.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+    
+  <footer class="container-fluid">
+  
+    <!--Redes Sociales-->
+    <div class="container-lg">
+  
+      <div class="row align-items-center justify-content-around">
+  
+        <div class="F-Follow row flex-column col-8 col-md-3 align-items-center justify-content-center">
+  
+          <div class="Seguinos">
+            <p>Seguinos en</p>
+          </div>
+  
+          <div class="col-12 row F-Redes align-items-center justify-content-around">
+          <div class="col-1">
+            <a href="#">
+            <img src="../public/img/ico-fb.png" alt="Facebook">
+            </a>
+          </div>
+          <div class="col-1 ">
+            <a href="https://instagram.com/">
+            <img src="../public/img/ico-ig.png" alt="Instagram">
+            </a>
+          </div>
+          <div class="col-1 ">
+            <a  href="https://twitter.com/">
+            <img src="../public/img/ico-tw.png" alt="Twitter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!--Copyright-->
+    <p class="licencia">© Copyright 2021 Pepes Bagre - Todos los derechos reservados.</p>
+  </footer>
+
+    
+<!--Scripts Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
